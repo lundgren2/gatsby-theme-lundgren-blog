@@ -1,29 +1,51 @@
-import { darken } from 'polished'
+import { darken } from 'polished';
+
+const breakpoints = [400, 768, 992, 1200];
 
 const brand = {
   primary: '#0D1552',
   secondary: '#7b8acc',
-}
+};
 
 const colors = {
+  primary: '#0D1552',
+  secondary: '#7b8acc',
+  dark: '#444',
+  text: '#333',
   grey: '#6b6b6b',
   black: '#000',
   white: '#fff',
-  bg_color: '#f3f3f3',
-  body_color: '#444',
-  link_color: brand.primary,
-  link_color_hover: darken(0.15, brand.primary),
-}
+  bg: '#f9f9f9',
+  link: brand.primary,
+  linkHover: darken(0.15, brand.primary),
+};
+
+const fonts = {
+  default: [
+    '-apple-system',
+    'BlinkMacSystemFont',
+    'Segoe UI',
+    'Roboto',
+    'Helvetica',
+    'Arial',
+    'sans-serif',
+    'Apple Color Emoji',
+    'Segoe UI Emoji',
+    'Segoe UI Symbol',
+  ],
+  serif: ['Georgia', 'serif'],
+  size: 18,
+};
+
+const animation = {
+  transitionTime: '300ms',
+};
 
 const theme = {
-  brand,
   colors,
-  breakpoints: {
-    xs: '400px',
-    s: '768px',
-    m: '992px',
-    l: '1200px',
-  },
+  animation,
+  breakpoints,
+  fonts,
   container: {
     base: '100rem',
     text: '55rem',
@@ -32,6 +54,6 @@ const theme = {
     horizontal: '2rem',
     vertical: '3rem',
   },
-}
+};
 
-export default theme
+export { theme as default, colors, animation, breakpoints, fonts };

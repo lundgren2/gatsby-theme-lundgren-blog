@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "gatsby develop",
     "build": "gatsby build",
-    "format": "eslint --fix --ext .jsx,.js",
+    "format": "eslint --fix --ext .jsx,.js src/",
     "deploy": "gatsby build && netlify deploy",
     "serve": "gatsby serve"
   },
@@ -28,7 +28,6 @@
     "gatsby-image": "^2.0.34",
     "gatsby-mdx": "^0.4.4",
     "gatsby-plugin-emotion": "^4.0.6",
-    "gatsby-plugin-google-analytics": "^2.0.17",
     "gatsby-plugin-netlify": "^2.0.13",
     "gatsby-plugin-page-creator": "^2.0.11",
     "gatsby-plugin-react-helmet": "^3.0.10",
@@ -38,7 +37,6 @@
     "gatsby-transformer-remark": "^2.3.5",
     "gatsby-transformer-sharp": "^2.1.17",
     "lodash": "^4.17.11",
-    "lodash.template": "^4.4.0",
     "polished": "^3.0.3",
     "prop-types": "^15.7.2",
     "react-helmet": "^5.2.0"
