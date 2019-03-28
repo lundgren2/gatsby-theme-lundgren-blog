@@ -10,7 +10,7 @@ export default () => (
       body {
         color: ${colors.text};
         font-family: ${fonts.default};
-        font-size: ${fonts.fontSize};
+        font-size: ${fonts.size};
         line-height: 1.45;
         text-decoration-skip: ink;
         /* @media ${media.medium} {

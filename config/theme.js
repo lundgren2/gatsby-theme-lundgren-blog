@@ -3,13 +3,11 @@ import { darken } from 'polished';
 const breakpoints = [400, 768, 992, 1200];
 
 const brand = {
-  primary: '#0D1552',
-  secondary: '#7b8acc',
+  primary: '#D0FFE3',
+  secondary: '#B1D8C6',
 };
 
 const colors = {
-  primary: '#0D1552',
-  secondary: '#7b8acc',
   dark: '#444',
   text: '#333',
   grey: '#6b6b6b',
