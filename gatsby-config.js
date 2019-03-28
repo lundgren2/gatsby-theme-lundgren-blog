@@ -1,9 +1,9 @@
 require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
-})
-const path = require('path')
+});
+const path = require('path');
 
-const config = require('./config/website')
+const config = require('./config/website');
 
 module.exports = {
   siteMetadata: {
@@ -37,12 +37,6 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        // trackingId: `ADD YOUR TRACKING ID HERE`,
-      },
-    },
-    {
       resolve: 'gatsby-mdx',
       options: {
         extensions: ['.mdx', '.md'],
@@ -61,14 +55,14 @@ module.exports = {
       },
     },
   ],
-}
+};
 
 exports.onCreateWebpackConfig = ({ getConfig, stage }) => {
-  const wpconfig = getConfig()
+  const wpconfig = getConfig();
   if (stage.startsWith('develop') && wpconfig.resolve) {
     wpconfig.resolve.alias = {
       ...wpconfig.resolve.alias,
       'react-dom': '@hot-loader/react-dom',
-    }
+    };
   }
-}
+};

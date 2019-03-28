@@ -1,9 +1,8 @@
-import React from 'react'
+import React from 'react';
 
 export default () => (
   <section
     style={{
-      // Header Specific Styling //
       padding: '10px',
       backgroundColor: '#252525',
       color: '#fff',
@@ -11,4 +10,4 @@ export default () => (
   >
     Tobias Lundgren
   </section>
-)
+);

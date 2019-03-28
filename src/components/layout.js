@@ -1,19 +1,17 @@
-import React from 'react'
-import Header from './Header'
-import Footer from './Footer'
+import React from 'react';
+import Header from './Header';
+import Footer from './Footer';
+import GlobalStyles from './GlobalStyles';
 
-export default ({ children }) => (
-  <React.Fragment>
-    <Header />
-    <div
-      style={{
-        margin: '10%',
-        backgroundColor: '#eee',
-        padding: '12px',
-      }}
-    >
-      {children}
-      <Footer />
-    </div>
-  </React.Fragment>
-)
+export default ({ children }) => [
+  <GlobalStyles key="global-styles" />,
+  <Header />,
+  <div
+    style={{
+      margin: '10%',
+    }}
+  >
+    {children}
+    <Footer />
+  </div>,
+];
