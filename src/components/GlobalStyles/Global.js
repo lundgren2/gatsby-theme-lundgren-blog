@@ -1,19 +1,27 @@
 import React from 'react';
-import { Global, css } from '@emotion/core';
+import { Global, css, keyframes } from '@emotion/core';
+
+const fadeIn = keyframes`
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+`;
 
 export default () => (
   <Global
     styles={css`
       body {
         border-top: 10px solid rgba(177, 216, 198, 1);
-        transition: 2s opacity;
-        /* border-style: solid;
-        border-color: rgba(208, 255, 227, 1);
-        border-image: linear-gradient(
-          to right,
-          rgba(208, 255, 227, 1) 0%,
-          rgba(177, 216, 198, 1) 100%
-        ); */
+        animation: ${fadeIn} 2s ease;
+      }
+      a {
+        &:visited {
+          color: #0000ee;
+        }
       }
     `}
   />

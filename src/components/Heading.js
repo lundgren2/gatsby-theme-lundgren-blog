@@ -1,10 +1,11 @@
 import React from 'react';
 import { Heading } from '@rebass/emotion';
+import { fonts } from '../../config/theme';
 
 const BaseHeading = props => (
   <Heading
     lineHeight={1.25}
-    fontFamily="system"
+    fontFamily={fonts.default}
     alignSelf="flex-start"
     {...props}
   />

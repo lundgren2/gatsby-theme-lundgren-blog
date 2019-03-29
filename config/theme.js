@@ -20,6 +20,7 @@ const colors = {
 
 const fonts = {
   default: [
+    'poppins',
     '-apple-system',
     'BlinkMacSystemFont',
     'Segoe UI',
@@ -30,9 +31,18 @@ const fonts = {
     'Apple Color Emoji',
     'Segoe UI Emoji',
     'Segoe UI Symbol',
-  ],
-  serif: ['Georgia', 'serif'],
-  size: 18,
+  ].join(', '),
+  serif: ['Georgia', 'serif'].join(', '),
+  mono: [
+    'SFMono-Regular',
+    'Consolas',
+    'Liberation Mono',
+    'Menlo',
+    'Courier',
+    'monospace',
+  ].join(', '),
+  sizeSm: '16px',
+  sizeMd: '18px',
 };
 
 const animation = {
@@ -52,6 +62,11 @@ const theme = {
     horizontal: '2rem',
     vertical: '3rem',
   },
+  gradient: `linear-gradient(
+    to right,
+    rgba(208, 255, 227, 1) 0%,
+    rgba(177, 216, 198, 1) 100%
+  )`,
 };
 
 export { theme as default, colors, animation, breakpoints, fonts };
