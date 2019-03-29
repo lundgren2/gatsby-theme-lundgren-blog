@@ -1,6 +1,6 @@
 import { darken } from 'polished';
 
-const breakpoints = [400, 768, 992, 1200];
+const breakpoints = [768, 1024, '64em'];
 
 const brand = {
   primary: '#D0FFE3',

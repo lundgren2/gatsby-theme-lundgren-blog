@@ -12,7 +12,7 @@ export default ({ children }) => [
   <ThemeProvider theme={theme}>
     <Sidebar />
     <Header />
-    <Container>{children}</Container>,
-    <Footer />,
+    <Container>{children}</Container>
+    <Footer />
   </ThemeProvider>,
 ];

@@ -7,6 +7,7 @@ const Wrapper = styled('header')`
   display: flex;
   padding-top: 40px;
   padding-left: 40px;
+  padding: 40px 40px 0 40px;
   align-items: center;
 `;
 
@@ -32,7 +33,9 @@ const NavItem = styled(Link)`
 
 export default () => (
   <Wrapper>
-    <Logo src={logo} alt="Tobias Lundgren" width="82" height="42" />
+    <Link to="/">
+      <Logo src={logo} alt="Tobias Lundgren" width="82" height="42" />
+    </Link>
     <Nav>
       <NavItem to="/">Home</NavItem>
       <NavItem to="/blog">Blog</NavItem>

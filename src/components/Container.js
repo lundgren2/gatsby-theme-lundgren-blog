@@ -1,3 +1,4 @@
+import React from 'react';
 import styled from '@emotion/styled';
 import { Box } from '@rebass/emotion';
 import media from '../utils/media';
@@ -10,10 +11,14 @@ export default styled(Box)`
 `;
 
 const WideBox = styled(Box)`
-  ${media.smDown} {
+  ${media.mdDown} {
     max-width: 100%;
   }
 `;
 export const WideContainer = props => (
-  <WideBox width={[1, 3 / 2, 2]} ml={[0, -1 / 4, -1 / 2]} {...props} />
+  <WideBox
+    width={['100%', '150%', '200%']}
+    ml={[0, '-25%', '-50%']}
+    {...props}
+  />
 );
