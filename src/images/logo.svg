@@ -1,16 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="300" height="272.816" viewBox="0 0 300 272.816">
-  <g id="logo" transform="translate(-3 -3)">
-    <g id="Layer_1" data-name="Layer 1" transform="translate(3 3)">
-      <g id="Group_2" data-name="Group 2" transform="translate(36.81 59.569)">
-        <g id="Group_1" data-name="Group 1">
-          <path id="Path_1" data-name="Path 1" d="M39.81,102.34v-27H159.45v27H115.69v119H83.58v-119Z" transform="translate(-39.81 -75.34)"/>
-          <path id="Path_2" data-name="Path 2" d="M202.79,92.84V197.6h62.64v23.76h-90.9V92.84Z" transform="translate(-39.81 -75.34)"/>
-        </g>
-      </g>
-      <g id="Rectangle_1" data-name="Rectangle 1" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="10">
-        <rect width="300" height="272.816" stroke="none"/>
-        <rect x="5" y="5" width="290" height="262.816" fill="none"/>
-      </g>
-    </g>
+<svg xmlns="http://www.w3.org/2000/svg" width="322" height="139" viewBox="0 0 322 139">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 117px;
+        font-family: HelveticaNeue-Bold, Helvetica Neue;
+        font-weight: 700;
+      }
+
+      .cls-2, .cls-3 {
+        font-size: 103px;
+      }
+
+      .cls-3 {
+        letter-spacing: -0.1em;
+      }
+    </style>
+  </defs>
+  <g id="Group_1" data-name="Group 1" transform="translate(-16.492 -16.358)">
+    <text id="_TL_" data-name="&lt;TL /&gt;" class="cls-1" transform="translate(16.492 130.358)"><tspan x="0" y="0">&lt;T</tspan><tspan class="cls-2" y="0">L</tspan><tspan class="cls-3" y="0"> </tspan><tspan class="cls-2" y="0">/&gt;</tspan></text>
   </g>
 </svg>
