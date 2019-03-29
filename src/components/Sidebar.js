@@ -2,7 +2,7 @@ import React from 'react';
 import styled from '@emotion/styled';
 import media from '../utils/media';
 
-const Wrapper = styled('div')`
+const SidebarWrapper = styled('div')`
   display: flex;
   align-items: center;
   position: absolute;
@@ -24,7 +24,7 @@ const Wrapper = styled('div')`
   }
 `;
 const Sidebar = () => {
-  return <Wrapper>Tobias Lundgren</Wrapper>;
+  return <SidebarWrapper>Tobias Lundgren</SidebarWrapper>;
 };
 
 export default Sidebar;

@@ -4,15 +4,15 @@ import Header from './Header';
 import Sidebar from './Sidebar';
 import Footer from './Footer';
 import GlobalStyles from './GlobalStyles';
+import theme from '../../config/theme';
+import Container from './Container';
 
 export default ({ children }) => [
   <GlobalStyles key="global-styles" />,
-  <ThemeProvider>
-    <Header />
+  <ThemeProvider theme={theme}>
     <Sidebar />
-    <div style={{}}>
-      {children}
-      <Footer />
-    </div>
+    <Header />
+    <Container>{children}</Container>,
+    <Footer />,
   </ThemeProvider>,
 ];
