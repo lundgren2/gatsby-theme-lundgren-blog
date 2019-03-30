@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import styled from '@emotion/styled';
-import { Twitter, GitHub, Rss } from 'react-feather';
+import { Twitter, GitHub, Linkedin, Rss } from 'react-feather';
 import media from '../utils/media';
 
 const SidebarWrapper = styled('div')`
@@ -58,6 +58,13 @@ const Sidebar = () => (
       </a>
       <a href="https://twitter.com/lundgren2" rel="me" target="_blank">
         <Twitter size="1.65em" />
+      </a>
+      <a
+        href="https://www.linkedin.com/in/tobias-lundgren/"
+        rel="me"
+        target="_blank"
+      >
+        <Linkedin size="1.65em" />
       </a>
       <Link to="/">
         <Rss size="1.65em" />
