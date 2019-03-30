@@ -1,5 +1,7 @@
 # Gatsby Theme Lundgren Blog
 
+[travis]: https://travis-ci.org/lundgren2/gatsby-theme-lundgren-blog.svg?branch=master
+
 A sweet Gatsby theme for awesome projects.
 
 ## Features

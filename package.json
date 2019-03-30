@@ -1,7 +1,7 @@
 {
   "name": "@lundgren/gatsby-theme-lundgren-blog",
   "description": "A Gatsby Theme for my personal site",
-  "version": "0.0.1",
+  "version": "0.0.0-development",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
@@ -9,7 +9,8 @@
     "build": "gatsby build",
     "format": "eslint --fix --ext .jsx,.js src/",
     "deploy": "gatsby build && netlify deploy",
-    "serve": "gatsby serve"
+    "serve": "gatsby serve",
+    "semantic-release": "semantic-release"
   },
   "peerDependencies": {
     "dotenv": "^7.0.0",
@@ -57,11 +58,12 @@
     "gatsby": "^2.3.2",
     "prettier": "^1.16.4",
     "react": "^16.8.5",
-    "react-dom": "^16.8.5"
+    "react-dom": "^16.8.5",
+    "semantic-release": "^15.13.3"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lundgren2/gatsby-theme-lundgren-blog.git"
+    "url": "https://github.com/lundgren2/gatsby-theme-lundgren-blog.git"
   },
   "keywords": [
     "gatsby-theme"
