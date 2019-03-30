@@ -21,7 +21,7 @@ const squareStyle = css`
   max-height: 500px;
   transform: rotate(35deg);
   background-color: rgba(177, 216, 198, 0.4);
-  position: fixed;
+  position: absolute;
   left: -120px;
   z-index: -999;
   bottom: -350px;
@@ -29,7 +29,6 @@ const squareStyle = css`
   will-change: transform;
 
   ${media.md} {
-    position: absolute;
     transform: rotate(65deg);
     top: 25px;
     bottom: auto;
@@ -43,6 +42,7 @@ export default () => (
     styles={css`
       body {
         border-top: 10px solid rgba(177, 216, 198, 1);
+        overflow: hidden;
         animation: ${fadeIn} 2s ease;
         &:before {
           ${squareStyle}
