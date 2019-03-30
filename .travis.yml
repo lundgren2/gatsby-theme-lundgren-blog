@@ -1,1 +1,8 @@
-// TODO: Add automatic deploy of theme to npmjs.com
+"// TODO": Add automatic deploy of theme to npmjs.com
+deploy:
+  provider: npm
+  email: tobias@lundgren.design
+  api_key:
+    secure: rKmaT6NKiRyLR8syYVRaS7dZDOtmSxZx+mOHJpxocXoQXmz1W+/J5xCtxYvO3nRZUDiKRAklidpG/nmFA1Bu4AyS931REbjZwF+riD3+J3m30waTNuLz8tFjNy/+fY64/4qgU/FIiUdQbsDakam98bS8tW4WoqBsQlb55AbRlkVbIrexlXhWd0Bj0rDdtEhRpTanGUjHUaMR+Mzy5WAG9oSOlTZ/OF1cjpLa1n98FB7DiXDDihDZVPokzlAXEWJMHEPZWeDsT22mpTECrj6iSywzRbMKm4ClqRJ5cD1WPvOZvBDYpyutBvst5qzk5OwjlD0lBPDVdPNjbSaMPtEB7VnCQ9T6STTc6AlBBEoSrrVHz3ocim+7mVNVEK2waYaoZ82XdNz/aWYQKs7E0OdlNsgch2EFq+nkWAeU1w5CCwV+T3yswGpyPvfkX7MpD/1R87xFGzPPYWQHSYH7n5VeWhm+d/D0P9G2dHsltiCgysI81dySc0sr8tL/dxWbsIZ8kx4BkSZ0SSCg7zBj3bsNslcQy7I7sLEjMlFDFWrg9yNRf4RV4p+ImAQ7gAHdxSQlPW6ObAtuxMsC9ue3gJjbcG7Xhah8G2Q1783lfR9AgLWYBX91oG77CObhT6FDh6wjfAOoNySleqHWrHTlKO/CuenpoHh9x606EY+7AFnQGqs=
+  on:
+    repo: lundgren2/gatsby-theme-lundgren-blog

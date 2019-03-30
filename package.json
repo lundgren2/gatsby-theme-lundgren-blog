@@ -1,5 +1,5 @@
 {
-  "name": "gatsby-theme-lundgren-blog",
+  "name": "@lundgren/gatsby-theme-lundgren-blog",
   "description": "A Gatsby Theme for my personal site",
   "version": "0.0.1",
   "main": "index.js",
@@ -58,5 +58,17 @@
     "prettier": "^1.16.4",
     "react": "^16.8.5",
     "react-dom": "^16.8.5"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lundgren2/gatsby-theme-lundgren-blog.git"
+  },
+  "keywords": [
+    "gatsby-theme"
+  ],
+  "author": "Tobias Lundgren <@lundgren2>",
+  "bugs": {
+    "url": "https://github.com/lundgren2/gatsby-theme-lundgren-blog/issues"
+  },
+  "homepage": "https://github.com/lundgren2/gatsby-theme-lundgren-blog#readme"
 }

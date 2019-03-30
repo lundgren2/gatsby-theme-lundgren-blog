@@ -29,6 +29,7 @@ const squareStyle = css`
   will-change: transform;
 
   ${media.md} {
+    position: absolute;
     transform: rotate(65deg);
     top: 25px;
     bottom: auto;
