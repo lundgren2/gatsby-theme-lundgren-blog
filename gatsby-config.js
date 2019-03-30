@@ -1,8 +1,8 @@
-require('dotenv').config({
-  path: `.env.${process.env.NODE_ENV}`,
-});
-const path = require('path');
+// require('dotenv').config({
+//   path: `.env.${process.env.NODE_ENV}`,
+// });
 
+const path = require('path');
 const config = require('./config/website');
 
 module.exports = {
@@ -18,6 +18,14 @@ module.exports = {
       resolve: 'gatsby-plugin-page-creator',
       options: {
         path: path.join(__dirname, 'src', 'pages'),
+      },
+    },
+    {
+      // keep as first gatsby-source-filesystem plugin for gatsby image support
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/static/images`,
+        name: `uploads`,
       },
     },
     {
@@ -41,7 +49,7 @@ module.exports = {
       options: {
         extensions: ['.mdx', '.md'],
         defaultLayouts: {
-          default: require.resolve('./src/components/layout.js'),
+          default: require.resolve('./src/components/Layout.js'),
         },
         gatsbyRemarkPlugins: [
           {
