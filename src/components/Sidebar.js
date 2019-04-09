@@ -51,7 +51,7 @@ const SocialWrapper = styled('div')`
 `;
 const Sidebar = () => (
   <>
-    <SidebarWrapper>Tobias Lundgren</SidebarWrapper>,
+    <SidebarWrapper>Tobias Lundgren</SidebarWrapper>
     <SocialWrapper>
       <a href="https://github.com/lundgren2" rel="me" target="_blank">
         <GitHub size="1.65em" />

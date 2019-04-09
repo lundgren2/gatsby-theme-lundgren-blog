@@ -39,7 +39,7 @@ export default () => (
     <Nav>
       <NavItem to="/">Home</NavItem>
       <NavItem to="/blog">Blog</NavItem>
-      <NavItem to="/portfolio"> Portfolio</NavItem>
+      <NavItem to="/portfolio">Portfolio</NavItem>
     </Nav>
   </Wrapper>
 );
