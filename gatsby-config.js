@@ -62,15 +62,11 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: `gatsby-plugin-compile-es6-packages`,
+      options: {
+        modules: [`@lundgren/gatsby-theme-lundgren-blog`],
+      },
+    },
   ],
-};
-
-exports.onCreateWebpackConfig = ({ getConfig, stage }) => {
-  const wpconfig = getConfig();
-  if (stage.startsWith('develop') && wpconfig.resolve) {
-    wpconfig.resolve.alias = {
-      ...wpconfig.resolve.alias,
-      'react-dom': '@hot-loader/react-dom',
-    };
-  }
 };
