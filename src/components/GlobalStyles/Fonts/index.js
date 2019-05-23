@@ -8,7 +8,7 @@ export default () => (
         font-family: 'poppinsbold';
         src: url('./poppins-bold-webfont.woff2') format('woff2'),
           url('./poppins-bold-webfont.woff') format('woff');
-        font-weight: normal;
+        font-weight: bold;
         font-style: normal;
       }
 
