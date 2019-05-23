@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { ThemeProvider } from 'emotion-theming';
 import Sidebar from './Sidebar';
 import Header from './Header';
@@ -7,7 +8,7 @@ import GlobalStyles from './GlobalStyles';
 import theme from '../../config/theme';
 import Container from './Container';
 
-export default ({ children }) => (
+const Layout = ({ children }) => (
   <ThemeProvider theme={theme}>
     <GlobalStyles key="global-styles" />
     <Sidebar />
@@ -16,3 +17,9 @@ export default ({ children }) => (
     <Footer />
   </ThemeProvider>
 );
+
+Layout.propTypes = {
+  children: PropTypes.func,
+};
+
+export default Layout;
