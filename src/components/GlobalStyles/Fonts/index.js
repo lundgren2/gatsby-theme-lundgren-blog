@@ -6,32 +6,32 @@ export default () => (
     styles={css`
       @font-face {
         font-family: 'poppinsbold';
-        src: url('./poppins-bold-webfont.woff2') format('woff2'),
-          url('./poppins-bold-webfont.woff') format('woff');
+        src: url(require('./poppins-bold-webfont.woff2')) format('woff2'),
+          url(require('./poppins-bold-webfont.woff')) format('woff');
         font-weight: bold;
         font-style: normal;
       }
 
       @font-face {
         font-family: 'poppins';
-        src: url('./poppins-bolditalic-webfont.woff2') format('woff2'),
-          url('./poppins-bolditalic-webfont.woff') format('woff');
+        src: url(require('./poppins-bolditalic-webfont.woff2')) format('woff2'),
+          url(require('./poppins-bolditalic-webfont.woff')) format('woff');
         font-weight: bold;
         font-style: italic;
       }
 
       @font-face {
         font-family: 'poppins';
-        src: url('./poppins-italic-webfont.woff2') format('woff2'),
-          url('./poppins-italic-webfont.woff') format('woff');
+        src: url(require('./poppins-italic-webfont.woff2')) format('woff2'),
+          url(require('./poppins-italic-webfont.woff')) format('woff');
         font-weight: normal;
         font-style: italic;
       }
 
       @font-face {
         font-family: 'poppins';
-        src: url('./poppins-regular-webfont.woff2') format('woff2'),
-          url('./poppins-regular-webfont.woff') format('woff');
+        src: url(require('./poppins-regular-webfont.woff2')) format('woff2'),
+          url(require('./poppins-regular-webfont.woff')) format('woff');
         font-weight: normal;
         font-style: normal;
       }
