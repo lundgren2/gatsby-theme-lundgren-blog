@@ -13,23 +13,23 @@ export default () => (
       }
 
       @font-face {
-        font-family: 'poppinsbold_italic';
+        font-family: 'poppins';
         src: url('./poppins-bolditalic-webfont.woff2') format('woff2'),
           url('./poppins-bolditalic-webfont.woff') format('woff');
-        font-weight: normal;
-        font-style: normal;
+        font-weight: bold;
+        font-style: italic;
       }
 
       @font-face {
-        font-family: 'poppinsitalic';
+        font-family: 'poppins';
         src: url('./poppins-italic-webfont.woff2') format('woff2'),
           url('./poppins-italic-webfont.woff') format('woff');
         font-weight: normal;
-        font-style: normal;
+        font-style: italic;
       }
 
       @font-face {
-        font-family: 'poppinsregular';
+        font-family: 'poppins';
         src: url('./poppins-regular-webfont.woff2') format('woff2'),
           url('./poppins-regular-webfont.woff') format('woff');
         font-weight: normal;

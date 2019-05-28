@@ -2,12 +2,12 @@
 // import PropTypes from 'prop-types'
 // import { Link } from 'gatsby'
 // import styled from '@emotion/styled'
-// // import Layout from '../components/Layout'
-// // import CategoryLink from '../components/CategoryLink'
-// // import TagLink from '../components/TagLink'
-// // import Pagination from '../components/Pagination'
-// // import { colors } from '../tokens'
-// // import useSiteMetadata from '../hooks/use-site-metadata'
+// import Layout from '../components/Layout'
+// import CategoryLink from '../components/CategoryLink'
+// import TagLink from '../components/TagLink'
+// import Pagination from '../components/Pagination'
+// import { colors } from '../tokens'
+// import useSiteMetadata from '../hooks/use-site-metadata'
 
 // const getHeading = ({ isFirstPage, currentPage, type, value, categories }) => {
 //   if (type === 'category' && value) {
