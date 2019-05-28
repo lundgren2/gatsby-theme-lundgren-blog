@@ -43,7 +43,6 @@ export default () => (
       body {
         border-top: 10px solid rgba(177, 216, 198, 1);
         overflow: hidden;
-        animation: ${fadeIn} 2s ease;
         &:before {
           ${squareStyle}
         }
