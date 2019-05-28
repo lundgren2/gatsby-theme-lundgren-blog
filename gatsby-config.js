@@ -1,7 +1,3 @@
-// require('dotenv').config({
-//   path: `.env.${process.env.NODE_ENV}`,
-// });
-
 const path = require('path');
 const config = require('./config/website');
 
@@ -18,6 +14,22 @@ module.exports = {
       resolve: 'gatsby-plugin-page-creator',
       options: {
         path: path.join(__dirname, 'src', 'pages'),
+      },
+    },
+    {
+      resolve: `gatsby-source-github-api`,
+      options: {
+        token: config.githubApiToken,
+        graphQLQuery: config.githubApiQuery,
+        variables: config.githubApiVariables,
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: /assets/,
+        },
       },
     },
     {
