@@ -4,7 +4,10 @@ import { Box } from '@rebass/emotion';
 import media from '../utils/media';
 
 const WideBox = styled(Box)`
-  position: 'relative';
+  position: relative;
+  padding-left: 16px;
+  padding-right: 16px;
+  background-color: #00ffff;
   ${media.mdDown} {
     /* max-width: 100%; */
   }

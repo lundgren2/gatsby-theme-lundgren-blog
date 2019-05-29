@@ -16,24 +16,23 @@ const squareStyle = css`
   content: '';
   display: block;
   width: 350px;
-  height: 500px;
-  max-width: 500px;
-  max-height: 500px;
-  transform: rotate(35deg);
-  background-color: rgba(177, 216, 198, 0.4);
-  position: absolute;
-  left: -120px;
-  z-index: -999;
-  bottom: -350px;
+  height: 350px;
+  transform: rotate(65deg);
+  background-color: rgba(177, 216, 198, 0.3);
+  position: fixed;
+  left: -200px;
+  z-index: -1;
+  bottom: -100px;
   transition: transform 400ms ease;
   will-change: transform;
+  overflow: hidden;
 
   ${media.md} {
-    transform: rotate(65deg);
+    transform: rotate(75deg);
     top: 25px;
     bottom: auto;
     left: auto;
-    right: -280px;
+    right: -220px;
   }
 `;
 
@@ -41,9 +40,11 @@ export default () => (
   <Global
     styles={css`
       body {
-        border-top: 10px solid rgba(177, 216, 198, 1);
-        overflow: hidden;
-        &:before {
+        /* border-top: 10px solid rgba(177, 216, 198, 1); */
+        /* width: 100%;
+        height: 100%; */
+        overflow-x: hidden;
+        &::before {
           ${squareStyle}
         }
       }
@@ -51,6 +52,19 @@ export default () => (
         &:visited {
           color: #0000ee;
         }
+      }
+      /* header,
+      main,
+      footer {
+        flex-shrink: 0;
+      } */
+      #___gatsby {
+        /* position: relative; */
+        /* min-height: 100vh; */
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* min-height: 100vh; */
+        /* align-items: stretch; */
       }
     `}
   />

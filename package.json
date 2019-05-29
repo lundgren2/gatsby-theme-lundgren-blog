@@ -10,8 +10,6 @@
     "dev": "gatsby develop",
     "build": "gatsby build",
     "format": "eslint --fix --ext .jsx,.js src/",
-    "deploy": "gatsby build && netlify deploy",
-    "serve": "gatsby serve",
     "semantic-release": "semantic-release"
   },
   "peerDependencies": {

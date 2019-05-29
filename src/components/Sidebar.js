@@ -7,7 +7,7 @@ import media from '../utils/media';
 const SidebarWrapper = styled('div')`
   display: flex;
   align-items: center;
-  position: absolute;
+  position: fixed;
   display: none;
   right: 40px;
   top: 80px;
@@ -20,7 +20,7 @@ const SidebarWrapper = styled('div')`
   transform-origin: bottom left;
   user-select: none;
   font-weight: bold;
-  ${media.md} {
+  ${media.sm} {
     display: block;
   }
 `;
@@ -28,10 +28,8 @@ const SidebarWrapper = styled('div')`
 const SocialWrapper = styled('div')`
   display: flex;
   align-items: center;
-  position: absolute;
   flex-direction: row;
-  right: 40px;
-  bottom: 5%;
+
   a svg {
     margin-left: 8px;
     color: ${props => props.theme.colors.text};
@@ -40,10 +38,19 @@ const SocialWrapper = styled('div')`
     }
   }
 
+  ${media.smDown} {
+    margin-left: 16px;
+    margin-bottom: 40px;
+  }
+
   ${media.sm} {
-    flex-direction: column;
+    position: fixed;
+    bottom: 5%;
+    right: 40px;
     right: 40px;
     bottom: 40px;
+    flex-direction: column;
+
     a svg {
       margin-top: 8px;
     }
@@ -53,15 +60,23 @@ const Sidebar = () => (
   <>
     <SidebarWrapper>Tobias Lundgren</SidebarWrapper>
     <SocialWrapper>
-      <a href="https://github.com/lundgren2" rel="me" target="_blank">
+      <a
+        href="https://github.com/lundgren2"
+        rel="me noopener noreferrer"
+        target="_blank"
+      >
         <GitHub size="1.65em" />
       </a>
-      <a href="https://twitter.com/lundgren2" rel="me" target="_blank">
+      <a
+        href="https://twitter.com/lundgren2"
+        rel="me noopener noreferrer"
+        target="_blank"
+      >
         <Twitter size="1.65em" />
       </a>
       <a
         href="https://www.linkedin.com/in/tobias-lundgren/"
-        rel="me"
+        rel="me noopener noreferrer"
         target="_blank"
       >
         <Linkedin size="1.65em" />

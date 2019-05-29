@@ -41,10 +41,7 @@ const PortfolioPage = () => {
   console.log(data);
   return (
     <Layout>
-      <Container
-        py={[20]}
-        css={{ maxWidth: 1200, overflow: 'scroll', maxHeight: '100vh' }}
-      >
+      <Container py={[20]}>
         <Flex flexWrap="wrap" alignItems="center">
           <Box>
             {repos.sort(sortNumber).map(repo => (

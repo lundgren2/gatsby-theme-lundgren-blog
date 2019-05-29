@@ -9,6 +9,7 @@ const Wrapper = styled('header')`
   padding-left: 40px;
   padding: 40px 40px 0 40px;
   align-items: center;
+  border-top: 10px solid rgba(177, 216, 198, 1);
 `;
 
 const Logo = styled('img')`
