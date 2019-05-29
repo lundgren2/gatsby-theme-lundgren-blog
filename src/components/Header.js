@@ -38,7 +38,7 @@ export default () => (
     </Link>
     <Nav>
       <NavItem to="/">Home</NavItem>
-      <NavItem to="/blog">Blog</NavItem>
+      {/* <NavItem to="/blog">Blog</NavItem> */}
       <NavItem to="/portfolio">Portfolio</NavItem>
     </Nav>
   </Wrapper>

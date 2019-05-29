@@ -1,5 +1,4 @@
 import React from 'react';
-import { css } from '@emotion/core';
 import { useStaticQuery, graphql } from 'gatsby';
 import { Flex, Box } from '@rebass/emotion';
 import Layout from '../components/Layout';

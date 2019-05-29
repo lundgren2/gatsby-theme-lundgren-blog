@@ -39,6 +39,7 @@
     "gatsby-plugin-react-helmet": "^3.0.10",
     "gatsby-plugin-react-svg": "^2.1.1",
     "gatsby-plugin-sharp": "^2.0.29",
+    "gatsby-plugin-web-font-loader": "^1.0.4",
     "gatsby-remark-images": "^3.0.10",
     "gatsby-source-filesystem": "^2.0.28",
     "gatsby-source-github-api": "^0.1.0",
@@ -68,6 +69,8 @@
     "semantic-release": "^15.13.3"
   },
   "keywords": [
-    "gatsby-theme"
+    "gatsby-theme",
+    "blog",
+    "portfolio"
   ]
 }

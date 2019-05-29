@@ -13,9 +13,6 @@ export default () => (
         font-size: ${fonts.size};
         line-height: 1.45;
         text-decoration-skip: ink;
-        /* @media ${media.medium} {
-          font-size: ${fonts.sizeMd};
-        } */
       }
       h1,
       h2,

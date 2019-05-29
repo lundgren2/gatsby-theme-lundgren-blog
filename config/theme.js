@@ -20,7 +20,7 @@ const colors = {
 
 const fonts = {
   default: [
-    'poppins',
+    'Poppins',
     '-apple-system',
     'BlinkMacSystemFont',
     'Segoe UI',
