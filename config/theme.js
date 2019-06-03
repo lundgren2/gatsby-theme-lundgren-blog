@@ -1,13 +1,11 @@
-import { darken } from 'polished';
+export const breakpoints = [768, 1024, 1200];
 
-const breakpoints = [768, 1024, '64em'];
-
-const brand = {
+export const brand = {
   primary: '#D0FFE3',
   secondary: '#B1D8C6',
 };
 
-const colors = {
+export const colors = {
   dark: '#444',
   text: '#333',
   grey: '#6b6b6b',
@@ -15,10 +13,10 @@ const colors = {
   white: '#fff',
   bg: '#f9f9f9',
   link: brand.primary,
-  linkHover: darken(0.15, brand.primary),
+  linkHover: brand.primary,
 };
 
-const fonts = {
+export const fonts = {
   default: [
     'Poppins',
     '-apple-system',
@@ -45,11 +43,11 @@ const fonts = {
   sizeMd: '18px',
 };
 
-const animation = {
+export const animation = {
   transitionTime: '300ms',
 };
 
-const theme = {
+export default {
   colors,
   animation,
   breakpoints,
@@ -68,5 +66,3 @@ const theme = {
     rgba(177, 216, 198, 1) 100%
   )`,
 };
-
-export { theme as default, colors, animation, breakpoints, fonts };

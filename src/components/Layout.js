@@ -1,17 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { ThemeProvider } from 'emotion-theming';
-import { css, jsx } from '@emotion/core';
+import GlobalStyles from './GlobalStyles';
+import Container from './Container';
 import Sidebar from './Sidebar';
 import Header from './Header';
 import Footer from './Footer';
-import GlobalStyles from './GlobalStyles';
 import theme from '../../config/theme';
-import Container from './Container';
 
 const Layout = ({ children }) => (
-  <ThemeProvider theme={theme}>
-    <GlobalStyles />
+  <ThemeProvider theme={theme} key="global-theme">
+    <GlobalStyles key="global-styles" />
     <Header />
     <Container>{children}</Container>
     <Footer />
@@ -20,7 +19,7 @@ const Layout = ({ children }) => (
 );
 
 Layout.propTypes = {
-  children: PropTypes.func,
+  children: PropTypes.node.isRequired,
 };
 
 export default Layout;
