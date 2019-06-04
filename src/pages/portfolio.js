@@ -38,7 +38,7 @@ const PortfolioPage = () => {
   }
 
   const repos = data.githubData.data.viewer.repositories.nodes;
-  console.log(data);
+
   return (
     <Layout>
       <Container py={[20]}>

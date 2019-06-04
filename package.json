@@ -41,7 +41,7 @@
     "gatsby-transformer-remark": "^2.3.12",
     "gatsby-transformer-sharp": "^2.1.21",
     "react-feather": "^1.1.6",
-    "react-helmet": "^5.2.1"
+    "react-helmet": "^6.0.0-beta"
   },
   "devDependencies": {
     "gatsby": "^2.8.2",
