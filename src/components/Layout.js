@@ -4,6 +4,7 @@ import { ThemeProvider } from 'emotion-theming';
 import GlobalStyles from './GlobalStyles';
 import Container from './Container';
 import Sidebar from './Sidebar';
+import Head from './Head';
 import Header from './Header';
 import Footer from './Footer';
 import theme from '../../config/theme';
@@ -11,6 +12,7 @@ import theme from '../../config/theme';
 const Layout = ({ children }) => (
   <ThemeProvider theme={theme} key="global-theme">
     <GlobalStyles key="global-styles" />
+    <Head />
     <Header />
     <Container>{children}</Container>
     <Footer />

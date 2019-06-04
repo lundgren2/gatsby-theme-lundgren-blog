@@ -27,7 +27,7 @@ export default () => (
         margin-top: 1.5rem;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-        &:first-child {
+        &:first-of-type {
           margin-top: 0;
         }
         & + p {

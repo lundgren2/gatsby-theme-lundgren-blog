@@ -40,7 +40,6 @@
     "gatsby-source-github-api": "^0.1.0",
     "gatsby-transformer-remark": "^2.3.12",
     "gatsby-transformer-sharp": "^2.1.21",
-    "prop-types": "^15.7.2",
     "react-feather": "^1.1.6",
     "react-helmet": "^5.2.1"
   },
