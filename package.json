@@ -50,7 +50,7 @@
     "prettier": "^1.17.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "semantic-release": "^15.13.12"
+    "semantic-release": "^17.2.3"
   },
   "keywords": [
     "gatsby-theme",
