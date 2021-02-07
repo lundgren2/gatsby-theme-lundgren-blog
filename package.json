@@ -47,6 +47,7 @@
   },
   "devDependencies": {
     "@semantic-release/git": "^9.0.0",
+    "@semantic-release/github": "^7.2.0",
     "gatsby": "^2.8.2",
     "prettier": "^1.17.1",
     "react": "^16.8.6",
