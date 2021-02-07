@@ -1,6 +1,6 @@
 export const clearStorage = () => localStorage.clear();
 
-export const getItemFromStorage = (key: string) => {
+export const getItemFromStorage = (key) => {
   if (!localStorage) return;
 
   try {
@@ -10,7 +10,7 @@ export const getItemFromStorage = (key: string) => {
   }
 };
 
-export const storeItem = (key: string, item: any) => {
+export const storeItem = (key, item) => {
   if (!localStorage) return;
 
   try {
@@ -20,7 +20,7 @@ export const storeItem = (key: string, item: any) => {
   }
 };
 
-export const removeItemFromStorage = (key: string) => {
+export const removeItemFromStorage = (key) => {
   if (!localStorage) return;
 
   try {

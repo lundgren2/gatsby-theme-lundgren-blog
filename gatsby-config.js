@@ -1,6 +1,8 @@
 const path = require('path');
 const config = require('./config/website');
 
+require('dotenv').config();
+
 module.exports = {
   siteMetadata: {
     title: config.siteTitle,
@@ -59,7 +61,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
-      resolve: 'gatsby-mdx',
+      resolve: 'gatsby-plugin-mdx',
       options: {
         extensions: ['.mdx', '.md'],
         defaultLayouts: {

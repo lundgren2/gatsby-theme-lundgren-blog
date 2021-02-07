@@ -1,6 +1,6 @@
 import React from 'react';
-import MDXRenderer from 'gatsby-mdx/mdx-renderer';
+import { MDXProvider } from '@mdx-js/react';
 
 export default ({ pageContext }) => (
-  <MDXRenderer>{pageContext.body}</MDXRenderer>
+  <MDXProvider>{pageContext.body}</MDXProvider>
 );
