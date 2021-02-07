@@ -11,7 +11,7 @@ import theme from '../../config/theme';
 
 const Layout = ({ children }) => (
   <ThemeProvider theme={theme} key="global-theme">
-    <GlobalStyles key="global-styles" />
+    <GlobalStyles />
     <Head />
     <Header />
     <Container>{children}</Container>

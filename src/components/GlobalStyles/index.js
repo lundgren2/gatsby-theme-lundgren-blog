@@ -4,4 +4,11 @@ import Fonts from './fonts';
 import Global from './Global';
 import Typography from './Typography';
 
-export default () => [<Reset />, <Fonts />, <Global />, <Typography />];
+export default () => (
+  <>
+    <Reset />
+    <Fonts />
+    <Global />
+    <Typography />
+  </>
+);
