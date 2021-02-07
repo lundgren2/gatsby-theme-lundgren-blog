@@ -21,25 +21,6 @@ module.exports = {
 
   // Github GraphQL
   githubApiToken: process.env.GITHUB_API_TOKEN,
-  githubApiQuery: `query($number_of_repos: Int!) {
-    viewer {
-      name
-      repositories(last: $number_of_repos, privacy: PUBLIC) {
-        nodes {
-          name
-          description
-          homepageUrl
-          resourcePath
-          forkCount
-          createdAt
-          updatedAt
-          stargazers {
-            totalCount
-          }
-        }
-      }
-    }
-  }`,
   githubApiVariables: {
     number_of_repos: 12,
   },
