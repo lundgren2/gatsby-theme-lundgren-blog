@@ -40,7 +40,7 @@
     "gatsby-remark-images": "^3.0.14",
     "gatsby-source-filesystem": "^2.0.38",
     "gatsby-source-graphql": "^2.3.2",
-    "gatsby-transformer-remark": "^2.3.12",
+    "gatsby-transformer-remark": "^5.25.1",
     "gatsby-transformer-sharp": "^2.1.21",
     "react-feather": "^1.1.6",
     "react-helmet": "^5.2.1"
